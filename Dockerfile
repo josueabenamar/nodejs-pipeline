@@ -1,4 +1,4 @@
-FROM node:alpine
+FROM node:8
 
 USER jenkins
 WORKDIR /home/jenkins
