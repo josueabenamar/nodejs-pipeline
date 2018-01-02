@@ -4,6 +4,11 @@ pipeline
 
 	stages
 	{
+		stage("Build")
+		{
+			sh '''
+				npm install
+				'''
+		}
 	}
 }
-

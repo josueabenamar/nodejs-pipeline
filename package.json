@@ -1,0 +1,15 @@
+{
+  "name": "nodejs-pipeline",
+  "description": "NodeJS Pipeline",
+  "version": "1.0.0",
+  "main": "server.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/josueabenamar/nodejs-pipeline.git"
+  },
+  "dependencies":
+  {
+    "express": "*",
+    "body-parser": "*"
+  }
+}
