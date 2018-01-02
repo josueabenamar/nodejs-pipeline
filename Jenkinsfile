@@ -39,10 +39,9 @@ pipeline
 			steps
 			{
 				echo "creating artifact"
-				echo "$TARGET"
 
 				sh '''
-					tar --exclude=".git" --exclude=".gitignore" --exclude="Jenkinsfile" -czf $TARGET
+					tar --exclude=".git" --exclude=".gitignore" --exclude="Jenkinsfile" -czf $TARGET .
 					'''
 			}
 		}
