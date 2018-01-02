@@ -1,6 +1,12 @@
 pipeline
 {
-	agent any
+	agent
+	{
+		docker:
+		{
+			image: "node:alpine"
+		}
+	}
 
 	environment
 	{
