@@ -6,9 +6,25 @@ pipeline
 	{
 		stage("Build")
 		{
-			sh '''
-				npm install
-				'''
+			steps
+			{
+				echo "building app"
+
+				sh '''
+					npm install
+					'''
+			}
+		}
+
+		stage("Create Artifact")
+		{
+			steps
+			{
+				echo "creating artifact"
+
+				sh '''
+					'''
+			}
 		}
 	}
 }
