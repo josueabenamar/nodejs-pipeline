@@ -2,7 +2,7 @@ pipeline
 {
 	agent
 	{
-		docker:
+		docker
 		{
 			image "node:alpine"
 		}
