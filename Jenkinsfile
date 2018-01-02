@@ -4,7 +4,7 @@ pipeline
 	{
 		docker:
 		{
-			image: "node:alpine"
+			image "node:alpine"
 		}
 	}
 
