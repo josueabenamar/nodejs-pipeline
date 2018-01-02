@@ -19,7 +19,11 @@ pipeline
 				echo "building app"
 
 				sh '''
-					sudo npm install
+					npm --version
+					node --version
+					pwd
+					env
+					#npm install
 					'''
 			}
 		}
@@ -31,8 +35,8 @@ pipeline
 				echo "testing app"
 
 				sh '''
-					export APP_MODE=test
-					node server.js
+					#export APP_MODE=test
+					#node server.js
 					'''
 			}
 		}
@@ -44,7 +48,7 @@ pipeline
 				echo "creating artifact"
 
 				sh '''
-					tar --exclude=".git" --exclude=".gitignore" --exclude="Jenkinsfile" --exclude="$TARGET" -czf $TARGET .
+					#tar --exclude=".git" --exclude=".gitignore" --exclude="Jenkinsfile" --exclude="$TARGET" -czf $TARGET .
 					'''
 			}
 		}
