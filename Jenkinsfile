@@ -2,10 +2,7 @@ pipeline
 {
 	agent
 	{
-		docker
-		{
-			image "nodejs:build"
-		}
+		dockerfile true
 	}
 
 	environment
