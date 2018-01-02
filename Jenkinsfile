@@ -19,7 +19,7 @@ pipeline
 				echo "building app"
 
 				sh '''
-					npm install
+					sudo npm install
 					'''
 			}
 		}
