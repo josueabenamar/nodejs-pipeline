@@ -19,12 +19,8 @@ pipeline
 				echo "building app"
 
 				sh '''
-					npm --version
-					node --version
-					pwd
 					env
-					echo $USER
-					ls
+					npm --version
 					#npm install
 					'''
 			}
@@ -50,7 +46,7 @@ pipeline
 				echo "creating artifact"
 
 				sh '''
-					tar --exclude=".git" --exclude=".gitignore" --exclude="Jenkinsfile" --exclude="$TARGET" -czf $TARGET .
+					tar --exclude=".git" --exclude=".gitignore" --exclude="Jenkinsfile" --exclude="Dockerfile" --exclude="$TARGET" -czf $TARGET .
 					'''
 			}
 		}
