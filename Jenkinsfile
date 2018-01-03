@@ -19,9 +19,7 @@ pipeline
 				echo "building app"
 
 				sh '''
-					env
-					npm --version
-					#npm install
+					npm install
 					'''
 			}
 		}
@@ -34,7 +32,7 @@ pipeline
 
 				sh '''
 					export APP_MODE=test
-					#node server.js
+					node server.js
 					'''
 			}
 		}
